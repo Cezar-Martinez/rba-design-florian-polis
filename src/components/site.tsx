@@ -38,6 +38,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-3">
         <div>
           <p className="font-display text-3xl">RBA<span className="text-accent">Design</span></p>
+          <p className="mt-2 font-display text-lg text-accent">Raphael Bortoluzzi Assayag</p>
           <p className="mt-4 max-w-xs text-sm opacity-70">Arquitetura e design de interiores de alto padrão em Florianópolis e região.</p>
         </div>
         <div className="text-sm opacity-80">
