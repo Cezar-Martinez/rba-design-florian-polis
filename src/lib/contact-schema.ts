@@ -15,7 +15,7 @@ export const contactSchema = z.object({
     .max(30)
     .regex(/^[0-9()+\-\s]+$/, "Telefone inválido"),
   email: z.string().trim().toLowerCase().email("E-mail inválido").max(255),
-  tipo: z.enum(TIPOS_PROJETO, "Tipo de projeto inválido"),
+  tipo: z.enum(TIPOS_PROJETO, { message: "Tipo de projeto inválido" }),
   mensagem: z.string().trim().max(2000, "Mensagem muito longa").default(""),
 });
 
